@@ -1,0 +1,58 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.error {
+    color: red;
+}
+
+.camiseta {
+    width: 450px;
+    height: 400px;
+    position: relative;
+    margin: 0 auto;
+}
+
+.area-centrar {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: black;
+}
+
+.area-pecho {
+    position: absolute;
+    top: 10%;
+    bottom: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.area-hombro {
+    position: absolute;
+    top: 30%; 
+    left: 5%;
+    transform: translate(-50%, -50%);
+    color: black;
+    font-size: 16px;
+}
+
+#textoTitulo {
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    font-size: 13px;
+    z-index: 2;
+}
+
+.pixel-font {
+    font-family: 'Press Start 2P', cursive;
+    color: #FFFFFF;
+    text-shadow: 
+        -1px -1px 0 #000000,
+         1px -1px 0 #000000,
+        -1px  1px 0 #000000,
+         1px  1px 0 #000000;
+}

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <title>Diseñador de Camisetas</title>
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+    <div class="container mt-4">
+        <h1 class="text-center">Diseñador de Camisetas</h1>
+        <div class="row justify-content-center">
+            <div class="col-md-3">
+                <div class="controls mb-3">
+                    <label for="titulo">Título:</label>
+                    <input type="text" class="form-control mb-2" id="titulo" maxlength="10" placeholder="Escribe un título">
+                    <span id="error" class="error text-danger"></span>
+
+                    <label for="posX">Posición X</label>
+                    <input type="range" class="form-control-range mb-2" id="posX" min="-20" max="20" value="0">
+
+                    <label for="posY">Posición Y</label>
+                    <input type="range" class="form-control-range mb-2" id="posY" min="-20" max="20" value="0">
+
+                    <div class="form-group">
+                        <label>Color de la camiseta:</label><br>
+                        <label class="mr-2"><input type="radio" name="color" value="white" checked> Blanca</label>
+                        <label><input type="radio" name="color" value="black"> Negra</label>
+                    </div>
+                </div>
+
+                <div class="image-gallery mb-3">
+                    <h5>Selecciona una imagen:</h5>
+                    <div class="d-flex justify-content flex-wrap">
+                        <img src="img/camiseta/Toji.png" id="img1" draggable="true" alt="Imagen 1" class="draggable img-thumbnail" style="width: 75px; height: auto;">
+                        <img src="img/camiseta/Gojo.png" id="img2" draggable="true" alt="Imagen 2" class="draggable img-thumbnail" style="width: 75px; height: auto;">
+                        <img src="img/camiseta/Geto.png" id="img3" draggable="true" alt="Imagen 3" class="draggable img-thumbnail" style="width: 75px; height: auto;">
+                        <img src="img/camiseta/Sukuna.png" id="img4" draggable="true" alt="Imagen 4" class="draggable img-thumbnail" style="width: 75px; height: auto;">
+                        <img src="img/camiseta/Jinx.png" id="img5" draggable="true" alt="Imagen 5" class="draggable img-thumbnail" style="width: 75px; height: auto;">
+                        <img src="img/camiseta/Goku.png" id="img6" draggable="true" alt="Imagen 6" class="draggable img-thumbnail" style="width: 75px; height: auto;">
+                        <img src="img/camiseta/Vegeta.png" id="img7" draggable="true" alt="Imagen 7" class="draggable img-thumbnail" style="width: 75px; height: auto;">
+                        <img src="img/camiseta/Wolf.png" id="img8" draggable="true" alt="Imagen 8" class="draggable img-thumbnail" style="width: 75px; height: auto;">
+                        <img src="img/camiseta/Artorias.png" id="img9" draggable="true" alt="Imagen 9" class="draggable img-thumbnail" style="width: 75px; height: auto;">
+                        <img src="img/camiseta/Spiderman.png" id="img10" draggable="true" alt="Imagen 10" class="draggable img-thumbnail" style="width: 75px; height: auto;">
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-7">
+                <div class="camiseta text-center position-relative">
+                    <img id="camiseta-imagen" src="img/camiseta/white.png" alt="Camiseta" class="img-fluid">
+                    
+                    <div class="area-titulo" style="position: absolute; top: 20%; right: 80%; transform: translateY(-50%); font-size: 8px;">
+                        <span id="textoTitulo" class="pixel-font">Título</span>
+                    </div>
+                    
+                    <div class="area-pecho">
+                        <img id="img-pecho" src="" alt="" class="img-fluid">
+                    </div>
+                    
+                    <div class="area-centrar">
+                        <span id="imagenGrande" class="d-block"></span>
+                    </div>
+
+                    <div class="area-nombre-imagen" style="position: absolute; bottom: 0%; left: 50%; transform: translateX(-50%); font-size: 10px;">
+                        <span id="nombreImagen" class="pixel-font"></span>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
