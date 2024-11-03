@@ -18,7 +18,7 @@ camisetaImagen.addEventListener('dragstart', function (e) {
     e.preventDefault(); // Evitar que la camiseta se pueda arrastrar
 });
 
-function handleDrop(e) {
+function soltarImagen(e) {
     e.preventDefault();
     let imgSrc = e.dataTransfer.getData('text/plain');
 
@@ -54,13 +54,13 @@ document.querySelector('.camiseta').addEventListener('dragover', function (e) {
     e.preventDefault();
 });
 
-document.querySelector('.camiseta').addEventListener('drop', handleDrop);
+document.querySelector('.camiseta').addEventListener('drop', soltarImagen);
 
 camisetaImagen.addEventListener('dragover', function (e) {
     e.preventDefault();
 });
 
-camisetaImagen.addEventListener('drop', handleDrop);
+camisetaImagen.addEventListener('drop', soltarImagen);
 
 // Actualizar el texto del título
 tituloInput.addEventListener('input', function () {

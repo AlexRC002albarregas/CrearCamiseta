@@ -1,9 +1,18 @@
 body {
     font-family: Arial, sans-serif;
+    background-color: orange;
 }
 
-.error {
-    color: red;
+.container {
+    border: 2px solid black; 
+    background-color: white;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+h1{
+    font-size: 35px;
 }
 
 .camiseta {
